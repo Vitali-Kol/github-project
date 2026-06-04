@@ -8,7 +8,7 @@ Süsteem ühendab õpilasi ja õpetajaid ühel platvormil, pakkudes mugavat suht
 
 ---
 
-#Figma link
+## Figma link
 https://www.figma.com/design/0RJm4mmnktwBLIJ1basxID/Prodigy?node-id=0-1&p=f&t=fuKbIZ78L3ZYM9c5-0
 
 ---
