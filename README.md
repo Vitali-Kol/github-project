@@ -111,3 +111,57 @@ Luua kasutajasõbralik veebikeskkond, kus:
 ## Projekti staatus
 
 Projekt on loodud õppetöö raames ning on arendusjärgus.
+
+# Kuidas süsteemi paigaldada / käivitada
+
+## 1. Sõltuvused (Dependencies)
+
+Enne süsteemi käivitamist peavad olema paigaldatud:
+
+* Docker 24+
+* Docker Compose 2+
+* Git
+
+## 2. Andmebaasi seadistamine
+
+1. Klooni projekt:
+
+```bash
+git clone <repository-url>
+cd project
+```
+
+2. Käivita andmebaas:
+
+```bash
+docker compose up -d db
+```
+
+3. Loo vajalikud tabelid:
+
+```bash
+docker compose exec app python manage.py migrate
+```
+
+4. Laadi testiandmed:
+
+```bash
+docker compose exec app python manage.py loaddata testdata.json
+```
+
+## 3. Süsteemi käivitamine
+
+Käivita kogu süsteem:
+
+```bash
+docker compose up -d
+```
+
+Kontrollimiseks ava veebilehitsejas:
+
+```text
+http://localhost:8000
+```
+
+Kui avaleht avaneb ilma veateadeteta, on süsteem edukalt käivitatud.
+
