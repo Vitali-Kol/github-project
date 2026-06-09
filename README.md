@@ -59,6 +59,7 @@ Luua kasutajasõbralik veebikeskkond, kus:
 * HTML
 * CSS
 * JavaScript
+* TypeScript
 
 ### Backend
 
